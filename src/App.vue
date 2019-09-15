@@ -3,7 +3,7 @@
     <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
     <section>
       <div class="container">
-        <h1>Test</h1>
+        <h1>Auto Loan Calculator</h1>
         <auto-loan-calculator/>
       </div>
     </section>    
