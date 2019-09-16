@@ -51,7 +51,9 @@
         return Math.round(estMonthlyAmount);
       },
       totalInterestPaid: function() {
+        const totalPrincipal = this.carPrice - this.downPayment;
 
+        return this.loanDurationMonths * this.monthlyPayment - totalPrincipal;
       },
     }, 
   }
