@@ -22,8 +22,10 @@ export default {
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,700&display=swap');
+
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'Nunito Sans', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -59,18 +61,43 @@ h6 {
   margin-top: 0;
 }
 
+h1 {
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+}
+
+h2 {
+  line-height: 1.15;
+}
+
+h3 {
+  line-height: 1.15;
+}
+
 .calc-wrapper {
-  margin-top: 5rem;
+  margin: 5rem 0;
 }
 
 .calc-container {
-  width: 22rem;
-  max-height: 90%;
+  width: 23em;
+  max-width: 90%;
   margin: 0 auto;
   background: white;
   color: #333;
   text-align: center;
-  padding: 1.75rem 3rem;
+  padding: 2rem 2.75rem 2.25rem 2.75rem;
   border-radius: .5rem;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 1);
+}
+
+@media only screen and (max-width: 599px) {
+  .calc-wrapper {
+    margin: 3rem 0;
+  }
+
+  .calc-container {
+    padding: 1.25rem 1.5rem;
+  }
 }
 </style>
