@@ -19,12 +19,15 @@
       placeholder="">
 
     <p>Loan Duration (in months)</p>
-    <input 
-      class="form-field form-field--duration" 
-      type="number" 
-      name="loanDurationMonths"
-      v-model.number="loanDurationMonths" 
-      placeholder="">
+    <select name="loanDurationMonths" v-model.number="loanDurationMonths" >
+        <option value="12">12 months</option>
+        <option value="24">24 months</option>
+        <option value="36">36 months</option>
+        <option value="48">48 months</option>
+        <option value="60" selected>60 months</option>
+        <option value="72">72 months</option>
+        <option value="84">84 months</option>
+      </select>
 
     <p>Interest Rate</p>    
     <input 
@@ -83,28 +86,29 @@
 
 <style scoped>
   p {
-    margin-bottom: 0;
+    margin: 0;
   }
 
-  input {
-    margin-bottom: 1rem;
-    padding: .5rem;
-    align-self: center;
-  }
-
-  .form-field-row {
-    display: flex;
-  }
-
-  .label {
-    position: relative;
-    width: 10rem;
-    align-self: center;
-  }
-
-  .label:after {
-    content: '$';
-    left: 10.5rem;
-    position: absolute;
-  }
+  input, 
+  select {
+    color: #333;
+    border: 1px solid #333;
+    width: 100%;
+    font-size: 1.25rem;
+    padding: 0 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 0;
+    background: white;
+    height: 50px;
+    -webkit-appearance: none;
+    appearance: none;
+    
+    &:focus {
+      background-color: #fff;
+      color: #3200ff;
+      border-color: #3200ff;
+      outline: 0;
+    }
+  
+}
 </style>
