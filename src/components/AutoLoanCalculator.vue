@@ -43,13 +43,11 @@
     </div>
 
     <div class="result-box">
-
       <h2>Estimated Monthly Payment:</h2>
       <div class="result__monthly-amount">$ {{ monthlyPayment }}</div>
 
       <h3>Total Interest Paid (over duration of loan)</h3>
       <div class="result__interest-paid">$ {{ totalInterestPaid }}</div>
-
     </div>
   </div>
 </template>

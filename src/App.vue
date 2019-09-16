@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
     <section class="calc-wrapper">
       <div class="calc-container">
         <h1>Auto Loan Calculator</h1>
@@ -24,10 +23,12 @@ export default {
 <style>
 @import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,700&display=swap');
 
-#app {
-  font-family: 'Nunito Sans', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
 }
 
 html {
@@ -44,12 +45,10 @@ body {
   padding: 0;
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
+#app {
+  font-family: 'Nunito Sans', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h1,
